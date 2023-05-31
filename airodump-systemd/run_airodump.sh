@@ -1,5 +1,14 @@
 #!/bin/bash
-# ##############################
+# ################################
+# READ DEFAULT ADDON CONFIGURATION
+# ################################
+CONFIG_PATH=/data/options.json
+WIFI_DEVICE="$(bashio::config 'WIFI_DEV')"
+MONITORED_2_4_SSID="$(bashio::config 'WIFI_BAND2_4')"
+MONITORED_5_SSID="$(bashio::config 'WIFI_BAND_5')"
+
+
+
 # CONFIGURE AS PER YOUR SYSTEM
 WIFI_DEVICE=wlp2s0
 
